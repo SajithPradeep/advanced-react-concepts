@@ -1,6 +1,7 @@
 //import Parent from "./Parent";
 //import SlideShow from "./SlideShow";
 import UseRefHookExplained from "./components/UseRefHook/UseRefHookExplained";
+import ChildElement from "./components/ChildrenApi/ChildElement";
 
 const centerContent = {
   display: "flex",
@@ -20,7 +21,10 @@ function App() {
         <img src="./assets/2.jpg" alt="" width="500" />
         <img src="./assets/3.jpg" alt="" width="500" />
       </SlideShow> */}
-      <UseRefHookExplained style={centerContent} />
+      {/* <UseRefHookExplained style={centerContent} /> */}
+      <div style={centerContent}>
+        <ChildElement />
+      </div>
     </div>
   );
 }
